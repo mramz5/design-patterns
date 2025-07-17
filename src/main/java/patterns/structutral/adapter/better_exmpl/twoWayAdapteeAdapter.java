@@ -1,14 +1,12 @@
 package patterns.structutral.adapter.better_exmpl;
 
+import lombok.AllArgsConstructor;
 import lombok.Setter;
 
+@AllArgsConstructor
 @Setter
 public class twoWayAdapteeAdapter extends AdapteeImpl2 implements Target {
     private Target target;
-
-    public twoWayAdapteeAdapter(Target target) {
-        this.target = target;
-    }
 
     //adaptee to target
     @Override

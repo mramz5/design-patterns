@@ -1,11 +1,13 @@
 package patterns.structutral.adapter.better_exmpl.class_v;
 
 import lombok.AllArgsConstructor;
+import lombok.Setter;
 import patterns.structutral.adapter.better_exmpl.AdapteeImpl;
 import patterns.structutral.adapter.better_exmpl.Target;
 import patterns.structutral.adapter.better_exmpl.ThreadUtility;
 
 @AllArgsConstructor
+@Setter
 public class ClassAdapteeAdapter extends AdapteeImpl implements Target {
     private Target target;
 
